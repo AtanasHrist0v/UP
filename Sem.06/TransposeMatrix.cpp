@@ -9,7 +9,7 @@ void swap(int& a, int& b) {
 }
 
 void transpose(int matrix[MATRIX_MAX_SIZE][MATRIX_MAX_SIZE], unsigned N, unsigned M) {
-	if (N < 1 || M < 1) {
+	if ((N == 0 || M == 0) && N != M) {
 		std::cout << "matrix has invalid size";
 		return;
 	}
