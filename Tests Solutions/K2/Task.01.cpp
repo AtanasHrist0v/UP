@@ -12,7 +12,7 @@ void readArr(int arr[], int& arrSize) {
 	}
 }
 
-bool isSorted(const int arr[], int arrSize) {
+bool isSorted(const int arr[], unsigned arrSize) {
 	for (int i = 1; i < arrSize; i++) {
 		if (arr[i - 1] > arr[i])
 			return false;
@@ -38,7 +38,7 @@ bool isPerfect(int number) {
 	return sum == number;
 }
 
-void printPerfectNumbers(const int arr[], int arrSize) {
+void printPerfectNumbers(const int arr[], unsigned arrSize) {
 	for (int i = 0; i < arrSize; i++) {
 		if (isPerfect(arr[i])) {
 			std::cout << arr[i] << ' ';
